@@ -1,101 +1,194 @@
 body {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  display: flex;
+}
+
+.menu li a {
+  color: whitesmoke;
+  /* font-size: 5vw; */
 }
 
 
-
-a {
+a:link {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 15px 50px 15px 50px;
-  padding: 0px;
+hr {
+  width: 80%
+ 
 }
-
-.text-img {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  /* margin: 50px; */
-  transform: translate(-153%, -50%);
-  color: white;
-}
-
-.text-img h1 {
-  padding-right: 95px;
-}
-
-.banner img {
-  display: inline-block;
+.menu {
   width: 100%;
+}
+
+.menu .menu-left,
+.menu .menu-right {
+  display: inline-flex;
+  padding: 60px 0px;
+  list-style: none;
+}
+
+.menu-left li,
+.menu-right li {
+  margin-left: 20px;
+}
+
+.menu {
+  background-color: rgb(125, 114, 114);
+}
+
+.text1,
+.text2,
+img,
+.content1,
+.content2,
+.content3 {
+  padding: 20px 30px;
+  /* font-size: 5vw; */
+}
+
+img {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    /* For tablets: */
+   
+    padding: 0px 25px;
+  }
+
+  .menu-right {
+    margin-left: 350px;
+  }
+
+
+  .menu .menu-left,
+  .menu .menu-right {
+    padding: 50px 0px 30px;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .row {
+    /* column-count: 2; */
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  img {
+    padding: 30px 5px 30px 15px;
+  }
+
+  .text1,
+  .text2,
+  .content1,
+  .content2,
+  .content3 {
+    padding: 20px 17px;
+  }
+
+
+
+
+
 
 }
 
-.banner {
-  position: relative;
-  text-align: center;
+@media only screen and (min-width: 970px) {
+  body {
+    /* For desktop: */
+   
+
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* display: flex; */
+    /* display: block; */
 }
 
 
-li {
-  display: inline;
-  padding: 7px 5px 7px 5px;
+
+
+.menu {
+  background-color: white;
+  margin: 0px 40px;
+  }
+
+.menu li a {
+color: rgb(56, 25, 167);
 }
 
+.menu-right {
+margin-left: 670px;
+}
 
-.text-middle {
-  background-color: rgb(232, 232, 229);
-  padding: 10px 0px 30px 0px;
+.row2 img {
+  margin-left: 20px;
+}
+
+.row3 img{
+  margin-left: 40px;
+}
+
+.text1 {
+  color: whitesmoke;
+  font-size: 30px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png?fbclid=IwAR0y7lIREtvEf098YRow4ALd-sy5aLkvYuSRkzsPL34ocDMrrlS9pKPVbgM);
+  height: 460px;
+  }
+  
+h1 p {
+  position: absolute;
+  bottom: 100px;
+
 
 }
 
-h2 {
-  margin: 15px 50px 15px 50px;
+hr {
+  border-width: 0px;
 }
 
-.text-middle p {
-  margin: 15px 50px 15px 50px;
-
-}
-
-.image-middle {
-  margin: 15px 50px 15px 50px;
-
+.text2 {
+  margin: 0px 40px;
+  padding-bottom: 0px;
 }
 
 .row {
-  display: grid;
   grid-template-columns: 30% 30% 30%;
-  gap: 50px;
-
-}
-
-.row1 {
   display: grid;
-  row-gap: 20px;
-
+  margin: 0px 40px;
 }
 
-.row2 {
+img {
+  padding-bottom: 0px;
+}
+
+.content{
+  grid-template-columns: 30% 30% 30%;
   display: grid;
-  row-gap: 20px;
-
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin: 15px 0px 70px 50px;
-}
-
-
-.content1 {
-  margin-right: 40px;
+  margin: 0px 40px;
 }
 
 .content2 {
-  margin-right: 60px;
+  margin-left: 20px;
 }
+.content3 {
+  margin-left: 40px;
+}
+
+
+
+
+}
+
+
